@@ -12,6 +12,7 @@ var life = 3;
 var edge1,edge2;
 var spaceship_obstacle
 var laser,laserGroup;
+var touches 
 function preload(){
  backgroundimg = loadAnimation("./gif/frame_05_delay-0.04s.gif","./gif/frame_04_delay-0.04s.gif","./gif/frame_03_delay-0.04s.gif","./gif/frame_02_delay-0.04s.gif","./gif/frame_01_delay-0.04s.gif","./gif/frame_00_delay-0.04s.gif");
  asteroid = loadImage("./assets/asteroid.png");
@@ -61,6 +62,7 @@ function draw() {
     spawnBullets();
   fire.velocityX = 4
   fire.addImage("bullet",bullet)
+   
   }
  spaceship.depth = bg.depth
  spaceship.depth+=10
