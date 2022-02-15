@@ -65,11 +65,11 @@ function draw() {
  spaceship.depth = bg.depth
  spaceship.depth+=10
 
- if(keyDown(UP_ARROW)){
+ if(keyDown(UP_ARROW)||touches.length>0.2){
   spaceship.y-=5
  }
 
- if(keyDown(DOWN_ARROW)){
+ if(keyDown(DOWN_ARROW)||touches.length>0.2){
   spaceship.y+=5
  }
 
