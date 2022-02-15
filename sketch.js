@@ -57,7 +57,7 @@ function draw() {
  spaceship.collide(edge1)
  spaceship.collide(edge2)
 
-  if(keyDown(RIGHT_ARROW)){
+  if(keyDown(RIGHT_ARROW)||touches.length>0){
     spawnBullets();
   fire.velocityX = 4
   fire.addImage("bullet",bullet)
