@@ -139,7 +139,7 @@ function draw() {
 
 function spawnObstacles(){
  if(frameCount %150 === 0){
-  var  obstacle = createSprite(windowWidth-150,windowHeight/2,30,30)
+  var  obstacle = createSprite(windowWidth,windowHeight/2,30,30)
    obstacle.addImage(asteroid);
    obstacle.scale = 0.1
    obstacle.y = Math.round(random(windowHeight/2-200,windowHeight/2+100));
@@ -164,7 +164,7 @@ fire.debug = false
 
 function spawnObstacles1(){
   if(frameCount %300 === 0){
-    var  obstacle1 = createSprite(windowWidth-200,windowHeight/2+50,30,30)
+    var  obstacle1 = createSprite(windowWidth,windowHeight/2+50,30,30)
      obstacle1.addImage(spaceship_obstacle);
      obstacle1.scale = 0.6
      obstacle1.y = Math.round(random(windowHeight/2-230,windowHeight/2+200));
